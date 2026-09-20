@@ -58,7 +58,7 @@ The reverse degree is `1 + 52 + 3 + 104 = 160`.
 **Language:** Java  
 **Runtime:** 1 ms (beats 100.00%)  
 **Memory:** 44.1 MB (beats 50.47%)  
-**Submitted:** 2026-09-20T07:34:50.280Z  
+**Submitted:** 2026-09-20T07:35:19.777Z  
 
 ```java
 class Solution {
@@ -67,12 +67,10 @@ class Solution {
         
         for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);
-            int stringIndex = i + 1; // Menggunakan 1-indexed
-            
-            // 'a' = 26, 'b' = 25, ..., 'z' = 1
+            int stringIndex = i + 1; 
             int reversedAlphabetPos = 26 - (ch - 'a');
             
-            // Tambahkan hasil perkalian ke total
+         
             totalDegree += reversedAlphabetPos * stringIndex;
         }
         
