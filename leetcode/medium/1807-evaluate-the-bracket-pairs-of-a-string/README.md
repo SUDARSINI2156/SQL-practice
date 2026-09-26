@@ -70,9 +70,9 @@ Notice that the "a"s not in a bracket pair are not evaluated.
 ## Solution
 
 **Language:** Python  
-**Runtime:** 0 ms  
-**Memory:** 12.4 MB  
-**Submitted:** 2026-09-26T08:51:39.186Z  
+**Runtime:** 84 ms (beats 50.00%)  
+**Memory:** 55.8 MB (beats 64.29%)  
+**Submitted:** 2026-09-26T08:51:45.266Z  
 
 ```py
 class Solution(object):
