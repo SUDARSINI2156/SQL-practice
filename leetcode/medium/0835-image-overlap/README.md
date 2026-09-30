@@ -53,53 +53,29 @@ Output: 0
 
 ## Solution
 
-**Language:** Java  
-**Runtime:** 42 ms (beats 91.67%)  
-**Memory:** 44.6 MB (beats 64.77%)  
-**Submitted:** 2026-09-13T06:55:00.074Z  
+**Language:** Python  
+**Runtime:** 386 ms (beats 74.69%)  
+**Memory:** 12.7 MB (beats 34.84%)  
+**Submitted:** 2026-09-30T05:09:15.870Z  
 
-```java
-class Solution {
-    public int largestOverlap(int[][] img1, int[][] img2) {
+```py
+from collections import Counter
 
-        int n = img1.length;
-        int max = 0;
+class Solution(object):
+    def largestOverlap(self, img1, img2):
+        n = len(img1)
+        
+        ones1 = [(r, c) for r in range(n) for c in range(n) if img1[r][c] == 1]
+        ones2 = [(r, c) for r in range(n) for c in range(n) if img2[r][c] == 1]
+        
+        vector_counts = Counter()
+        for r1, c1 in ones1:
+            for r2, c2 in ones2:
+                transformation_vector = (r2 - r1, c2 - c1)
+                vector_counts[transformation_vector] += 1
+                
+        return max(vector_counts.values()) if vector_counts else 0
 
-        for (int rowShift = -(n - 1); rowShift <= n - 1; rowShift++) {
-
-            for (int colShift = -(n - 1); colShift <= n - 1; colShift++) {
-
-                int count = 0;
-
-                for (int i = 0; i < n; i++) {
-
-                    for (int j = 0; j < n; j++) {
-
-                        if (img1[i][j] == 1) {
-
-                            int newRow = i + rowShift;
-                            int newCol = j + colShift;
-
-                            if (newRow >= 0 && newRow < n &&
-                                newCol >= 0 && newCol < n) {
-
-                                if (img2[newRow][newCol] == 1) {
-                                    count++;
-                                }
-                            }
-                        }
-                    }
-                }
-
-                if (count > max) {
-                    max = count;
-                }
-            }
-        }
-
-        return max;
-    }
-}
 ```
 
 ---
