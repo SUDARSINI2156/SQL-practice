@@ -54,9 +54,9 @@ Output: 0
 ## Solution
 
 **Language:** Python  
-**Runtime:** 386 ms (beats 74.69%)  
-**Memory:** 12.7 MB (beats 34.84%)  
-**Submitted:** 2026-09-30T05:09:15.870Z  
+**Runtime:** 394 ms (beats 73.24%)  
+**Memory:** 12.9 MB (beats 14.19%)  
+**Submitted:** 2026-09-30T07:39:56.822Z  
 
 ```py
 from collections import Counter
