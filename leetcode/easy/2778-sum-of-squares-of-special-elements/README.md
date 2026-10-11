@@ -42,9 +42,9 @@ Hence, the sum of the squares of all special elements of nums is nums[1]  *nums[
 ## Solution
 
 **Language:** Python  
-**Runtime:** 8 ms (beats 5.05%)  
-**Memory:** 12.3 MB (beats 55.96%)  
-**Submitted:** 2026-10-11T07:43:29.878Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 12.4 MB (beats 22.02%)  
+**Submitted:** 2026-10-11T07:43:38.472Z  
 
 ```py
 class Solution(object):
