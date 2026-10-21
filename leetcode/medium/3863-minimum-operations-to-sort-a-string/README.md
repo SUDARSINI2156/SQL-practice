@@ -54,42 +54,33 @@ Return the  **minimum**  number of operations required to make `s` sorted in  **
 ## Solution
 
 **Language:** Python  
-**Runtime:** 0 ms  
-**Memory:** 12.1 MB  
-**Submitted:** 2026-10-21T04:07:17.127Z  
+**Runtime:** 388 ms (beats 36.36%)  
+**Memory:** 14.1 MB (beats 90.91%)  
+**Submitted:** 2026-10-21T04:13:14.583Z  
 
 ```py
-class Solution(object):
+
+class Solution:
     def minOperations(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
-        sorted_s = "".join(sorted(s))
-        
-        # Case 0: String is already sorted
+        n = len(s)
+        sorted_s = ''.join(sorted(s))
+
         if s == sorted_s:
             return 0
-            
-        n = len(s)
-        
-        # Case 1: A boundary character is already in its correct final home.
-        if s[0] == sorted_s[0] or s[n-1] == sorted_s[n-1]:
+
+        if n == 2:
+            return -1
+
+        smallest = min(s)
+        largest = max(s)
+
+        if s[0] == smallest or s[-1] == largest:
             return 1
-            
-        # Case 2: The absolute max is at the front and absolute min is at the back
-        if s[0] == sorted_s[n-1] and s[n-1] == sorted_s[0]:
-            
-            # Check if the middle section contains only a uniform repeating character
-            # (or is empty, which handles n=2 and n=3 automatically)
-            middle_section = s[1:n-1]
-            if len(set(middle_section)) <= 1:
-                if n == 2:
-                    return -1 # "gf" -> Completely impossible
-                else:
-                    return 3  # "edc", "srrp" -> Requires 3 rolling operations
-                
-        # Case 3: All other mixed configurations can be solved in 2 steps
+
+        if s[0] == largest and s[-1] == smallest:
+            if s.count(largest) == 1 and s.count(smallest) == 1:
+                return 3
+
         return 2
 
 ```
