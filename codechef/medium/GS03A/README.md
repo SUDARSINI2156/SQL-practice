@@ -39,13 +39,12 @@ Abcd
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-28T06:18:31.260Z  
+**Submitted:** 2026-10-28T06:19:54.670Z  
 
 ```py
-# Replace the _ (underscores) in the code below
+S = input()
+print(S)
 
-S = _____()
-print(_)
 ```
 
 ---
