@@ -62,9 +62,9 @@ Explanation: Events in chronological order go as follows:
 ## Solution
 
 **Language:** Python  
-**Runtime:** 1314 ms (beats 11.29%)  
-**Memory:** 54.9 MB (beats 41.94%)  
-**Submitted:** 2026-11-07T13:05:16.371Z  
+**Runtime:** 1368 ms (beats 6.45%)  
+**Memory:** 54.7 MB (beats 62.90%)  
+**Submitted:** 2026-11-07T13:05:26.618Z  
 
 ```py
 import heapq
