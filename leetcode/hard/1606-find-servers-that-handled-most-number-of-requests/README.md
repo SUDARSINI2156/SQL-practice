@@ -65,9 +65,9 @@ Explanation: Each server handles a single request, so they are all considered th
 ## Solution
 
 **Language:** Python  
-**Runtime:** 892 ms (beats 52.94%)  
-**Memory:** 36.7 MB (beats 23.53%)  
-**Submitted:** 2026-11-09T04:24:08.116Z  
+**Runtime:** 942 ms (beats 52.94%)  
+**Memory:** 36.9 MB (beats 11.76%)  
+**Submitted:** 2026-11-09T04:24:18.444Z  
 
 ```py
 import heapq
