@@ -45,9 +45,9 @@ Explanation: The maximum consecutive elements that we can select is 1.
 ## Solution
 
 **Language:** Python  
-**Runtime:** 364 ms (beats 66.67%)  
+**Runtime:** 352 ms (beats 66.67%)  
 **Memory:** 30.8 MB (beats 33.33%)  
-**Submitted:** 2026-11-20T08:09:07.458Z  
+**Submitted:** 2026-11-20T08:09:38.276Z  
 
 ```py
 class Solution(object):
