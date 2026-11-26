@@ -24,7 +24,7 @@ Click on  **Submit**  below the IDE to know the result. Then click on next to co
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-25T08:43:16.717Z  
+**Submitted:** 2026-11-26T12:22:24.003Z  
 
 ```py
 print(12)
